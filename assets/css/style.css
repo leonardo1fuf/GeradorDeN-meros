@@ -1,0 +1,183 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: 	#363636;
+    padding: 30px 40px;
+    min-width: 470px;
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.input-group{
+    display: flex;
+    padding: 20px 0px;
+    gap: 50px;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.input-field input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid 	#6A5ACD;
+    font-size: 18px;
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+}
+
+.input-field input:focus{
+    outline: none;
+    border-bottom: 3px solid 	#6A5ACD;
+}
+
+#generate{
+    background-color: 	#6A5ACD;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    width: 100%;
+    margin: 20px 0px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#generate:hover{
+    background-color: #7e71d4;
+}
+
+#result{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 440px) {
+    
+    body{
+        overflow: hidden;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        min-width: 350px;
+    }
+
+    .container h2{
+        font-size: 25px;
+    }
+
+    .container .input-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #generate{
+        width: 250px;
+    }
+
+    #result{
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width: 424px) {
+    
+    body{
+        overflow: hidden;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        min-width: 350px;
+    }
+
+    .container h2{
+        font-size: 25px;
+    }
+
+    .container .input-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #generate{
+        width: 250px;
+    }
+
+    #result{
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width: 385px) {
+    
+    body{
+        overflow: hidden;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        min-width: 300px;
+    }
+
+    .container h2{
+        font-size: 20px;
+    }
+
+    .container .input-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #generate{
+        width: 250px;
+    }
+
+    #result{
+        font-size: 35px;
+    }
+
+}
